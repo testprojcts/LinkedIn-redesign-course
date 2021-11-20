@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkedIn Clone - Redesigned</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="all.min.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="wrapper">
+      <header class="center">
+        <div class="left">
+          <div class="logo">
+            <h3><a href="index.html">LINKEDIN</a></h3>
+          </div>
+          <div class="searchbox">
+            <i class="fas fa-search lg search_icon"></i>
+            <input
+              type="search"
+              name="searchinput"
+              id="search_input"
+              placeholder="Search"
+              required
+            />
+          </div>
+        </div>
+        <div class="right">
+          <button>
+            <i class="fas fa-bell md bell_icon"></i>
+          </button>
+
+          <a href="">
+            <img src="/assets/user.svg" alt="" />
+          </a>
+          <button>
+            <i class="fas fa-bars md menu_icon"></i>
+          </button>
+          <a href="" class="_btn">Upgrade to Premium</a>
+        </div>
+      </header>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <section class="tabs_wrapper center">
+      <div class="tabs">
+        <a href="" class="active"><i class="fas fa-home md"></i>Home</a>
+        <a href=""><i class="fas fa-users md"></i>My Network</a>
+        <a href=""><i class="fas fa-briefcase md"></i>Job Offers</a>
+        <a href=""><i class="fas fa-user md"></i>My Profile</a>
+      </div>
+    </section>
+
+    <main class="center">
+      <!-- Main Content -->
+      <section class="grid">
+        <div class="left_user_card">
+          <div class="user_card">
+            <div class="bg"></div>
+            <div class="user_card_content">
+              <img src="/assets/user.svg" alt="" />
+              <h4>Erasmus Mensah</h4>
+              <p>Founder, Codewitheras</p>
+              <div class="follows">
+                <div class="prof_view">
+                  <h4>30</h4>
+                  <p>Profile views</p>
+                </div>
+                <div class="posts">
+                  <h4>20</h4>
+                  <p>Posts</p>
+                </div>
+              </div>
+              <div class="exclusive">
+                <p>Access exclusive tools & insights</p>
+                <a href="" class="_btn">Upgrade to Premium</a>
+              </div>
+            </div>
+          </div>
+          <div class="recent">
+            <p>Recent</p>
+            <div class="recent_list">
+              <ul>
+                <li>
+                  <i class="fas fa-hashtag"></i><span>User Experience</span>
+                </li>
+                <li>
+                  <i class="fas fa-phone"></i
+                  ><span>Mobile Trends Conference 2021</span>
+                </li>
+                <li>
+                  <i class="fas fa-user"></i><span>Freelance Designers</span>
+                </li>
+                <li><i class="fas fa-caret-down"></i><span>Show more</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="middle_card">
+          <div class="main_post">
+            <div class="post_header">
+              <div class="post_hd">
+                <img src="/assets/pic_8_3.jpg" alt="" />
+                <div class="post_input_box">
+                  <i class="fas fa-edit edit_icon"></i>
+                  <input
+                    type="text"
+                    placeholder="Start a new post"
+                    id="post_btn"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="post_header_btns">
+              <button><i class="fas fa-edit"></i>Photo/video</button>
+              <button><i class="fas fa-file"></i>Document</button>
+              <button><i class="fas fa-edit"></i>Article</button>
+              <button><i class="fas fa-edit"></i>Event</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal_container" id="modal-bg">
+          <div class="modal">
+            <form id="post_form" class="post_form">
+              <div class="form_hd">
+                <h3>Create a post</h3>
+                <button id="close" type="button">+</button>
+              </div>
+              <div class="form_content">
+                <div class="user_info">
+                  <img src="/assets/user.svg" alt="" />
+                  <div class="user_name">
+                    <h4>Erasmus Mensah</h4>
+                    <select name="post_location" id="">
+                      <option value="Anyone">Anyone</option>
+                      <option value="Anyone">Close friends</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="post_textbox">
+                  <div class="textarea_wrapper">
+                    <textarea
+                      name="post_inputbox"
+                      id="post_box"
+                      cols="20"
+                      rows="8"
+                      placeholder="What do you want to talk about?"
+                      required
+                    ></textarea>
+                    <div class="hashtag">
+                      <button id="hashtag" type="button">Add hashtag</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="post">
+                  <button id="post_btn">Post</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="right_widget_card">skhfklhsfkhsk;lsk</div>
+      </section>
+    </main>
+
+    <!-- scripts -->
+    <script src="main.js"></script>
+  </body>
+</html>
