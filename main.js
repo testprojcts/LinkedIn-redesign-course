@@ -1,7 +1,6 @@
 let addHashTag = document.getElementById('hashtag');
 let addPost = document.getElementById('post_btn');
 let closeBtn = document.getElementById('close');
-// let backdrop = document.getElementById('modal');
 
 const postBtn = document.getElementById('post_btn');
 
