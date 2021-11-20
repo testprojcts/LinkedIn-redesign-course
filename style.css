@@ -1480,6 +1480,9 @@ select option {
     z-index: 1;
     position: sticky;
     padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .wrapper header .left .logo h3 a {
