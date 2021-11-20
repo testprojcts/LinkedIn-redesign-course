@@ -542,12 +542,12 @@ main {
 /* POST MODAL BOX */
 .modal_container {
   width: 100%;
-  min-height: 100%;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 5;
   padding: 0 20px;
   display: none;
   transition: all 3s linear;
@@ -731,7 +731,7 @@ select option {
   justify-content: space-between;
   margin-bottom: 10px;
   padding: 15px 0;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.26);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.123);
 }
 
 .post_card_hd p {
@@ -760,7 +760,6 @@ select option {
   object-fit: contain;
   object-position: center;
   border-radius: 50%;
-  border: 2px solid dodgerblue;
   padding: 3px;
 }
 
@@ -807,6 +806,7 @@ select option {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   width: 100%;
+  margin-bottom: 25px;
 }
 
 .main_post_content-img img {
@@ -859,4 +859,45 @@ select option {
   cursor: pointer;
   color: var(--header-blue);
   font-weight: 550;
+}
+
+.comment_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.comment_section .comment_hd {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 7px;
+}
+
+.comment_hd img {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.comment_input_box {
+  height: 40px;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.comment_input_box input {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  background-color: rgba(123, 123, 141, 0.075);
+  padding: 0 10px;
+  color: var(--global-black);
 }

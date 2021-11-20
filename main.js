@@ -1,7 +1,7 @@
 let addHashTag = document.getElementById('hashtag');
 let addPost = document.getElementById('post_btn');
 let closeBtn = document.getElementById('close');
-let backdrop = document.getElementById('modal');
+// let backdrop = document.getElementById('modal');
 
 const postBtn = document.getElementById('post_btn');
 
@@ -16,11 +16,3 @@ addPost.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
   modalContainer.style.display = 'none';
 });
-
-backdrop.addEventListener('click', () => {
-  modalContainer.style.display = 'none';
-});
-
-if (postBox === ' ') {
-  postBtn.setAttribute('disabled');
-}
