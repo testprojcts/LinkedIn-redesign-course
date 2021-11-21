@@ -57,6 +57,10 @@ main {
   position: sticky;
   top: 0;
   z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .wrapper header {
@@ -68,15 +72,16 @@ main {
   height: 100%;
   gap: 10px;
   background-color: var(--header-blue);
+  gap: 50px;
 }
 
 .left {
-  /* width: 100%; */
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 10px;
   flex: 1;
+  width: 100%;
 }
 
 .left .logo h3 a {
@@ -128,7 +133,6 @@ main {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  width: 100%;
 }
 
 .right button {
@@ -1002,7 +1006,8 @@ select option {
   }
 
   .wrapper .right,
-  .wrapper .searchbox {
+  .tabs_wrapper,
+  .tabs_wrapper .tabs {
     display: none;
   }
 
@@ -1015,13 +1020,55 @@ select option {
     width: 100%;
   }
 
-  .tabs_wrapper {
-    position: relative;
+  /* TABS */
+
+  .mobile_tabs {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--global-white);
+    overflow: hidden;
   }
 
-  .tabs_wrapper .tabs {
-    display: none;
+  .mobile_tabs .mobile_tab {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    gap: 10px;
+    height: 100%;
+    /* max-width: 50%; */
+  }
+
+  .mobile_tab a {
+    color: var(--global-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 100%;
+    width: 100%;
+    /* position: relative;
+    padding-bottom: 15px; */
+    font-size: 12px;
+    font-weight: 550;
+  }
+
+  .mobile_tab a:hover {
+    color: var(--header-blue);
+    transition: all 0.2s linear;
+  }
+
+  .mobile_tab a.active {
+    border-bottom: 3px solid var(--header-blue);
+    padding-bottom: 15px;
+    color: var(--header-blue);
+    font-weight: 600;
+  }
+
+  .mobile_tab a i {
+    margin-right: 5px;
   }
 
   .middle_card {
@@ -1474,7 +1521,7 @@ select option {
 }
 
 /* Laptop */
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   .wrapper header {
     top: 0;
     z-index: 1;
@@ -1735,10 +1782,10 @@ select option {
   .comment_input_box input {
     font-size: 13px;
   }
-}
+} */
 
 /* Large Screens */
-@media screen and (min-width: 1440px) {
+/* @media screen and (min-width: 1440px) {
   .wrapper header {
     top: 0;
     z-index: 1;
@@ -1972,4 +2019,4 @@ select option {
   .comment_input_box input {
     font-size: 13px;
   }
-}
+} */
