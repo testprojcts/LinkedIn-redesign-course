@@ -15,3 +15,10 @@ addPost.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
   modalContainer.style.display = 'none';
 });
+
+// When the user clicks anywhere outside of the modal, the modal should be closed
+window.addEventListener('click', (event) => {
+  if (event.target == modalContainer) {
+    modalContainer.style.display = 'none';
+  }
+});
